@@ -5,6 +5,18 @@
 
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
+
+.contenedor {
+    width: 500px;
+    margin: 10 auto;
+}
+
+/* --- Estructura --- */
+.cuerpo {
+    margin: 100px;
+    position: relative;
+}
+
 *{
 	margin:0;
 	padding:0;
@@ -23,6 +35,21 @@ body{
 h1, h3,{
 	font-weight:700;
 	font-family: 'Oswald', sans-serif;
+
+	#inner {
+		 width: 5em;
+		 height: 5em;
+		 background-color: #999;
+		 position: static ;
+
+	}
+	#second
+		 width: 5em;
+		 height: 150em;
+		 position: fixed;
+		 top: 1em;
+		 left: 2em;}
+
 }
 
 }
@@ -30,22 +57,44 @@ h1, h3,{
 h2, h4,{
 	font-weight:700;
 	font-family: 'Abel', sans-serif;
+	position: static;
 
 }
 
 h1{
 	font-size:6rem;
+
 	letter-spacing:0.3em;
 	color:rgba(255,255,255,0.9);
 	text-align:center;
 	text-shadow: 2px 2px #ff0000;
-}
+  header { position: fixed;
+	background-color: #ffff00;
+	height: 100px; }
+
+
+	#inner {
+	   width: 5em;
+	   height: 5em;
+	   background-color: #999;
+		 position: fixed;
+		top: -10em;
+		left: 0em;}
+
+	}
+	#second
+	   width: 5em;
+	   height: 150em;
+	   position: fixed;
+	   top: 1em;
+	   left: 2em;}
 
 h2{
 	font-size:2rem;
 	letter-spacing:0.1em;
 	color:rgba(255,255,255,0.9);
 	text-align:center;
+	padding:5rem 0;
 }
 
 h3{
@@ -53,7 +102,7 @@ h3{
 	letter-spacing:0.1em;
 	color:rgba(0,0,0,0.9);
 	text-align:center;
-	padding:1rem 0;
+	padding:2rem 0;
 }
 
 a{
@@ -75,6 +124,7 @@ header{
 	width:100%;
 	top:30%;
 	position: absolute;
+  top: 150px; left: 40px;
 	text-align:center;
 	z-index:9;
 	color:white;
@@ -131,7 +181,7 @@ video{
 
 .segunda p{padding: 2% 2% 2% 40%;}
 
-.segunda address{padding: 2% 2% 2% 40%; font-size:0.9em; font-style:normal;}
+.segunda address{padding: 1% 1% 1% 0%; font-size:1em; font-style:normal;}
 
 #somos hr{
 	clear:both;
@@ -202,93 +252,11 @@ footer p{
 
 /* AJUSTES PARA QUE SE VEA BIEN EN DISTINTOS DISPOSITIVOS */
 
-
-
-@media only screen
-    and (device-width : 375px)
-    and (device-height : 667px)
-    and (-webkit-device-pixel-ratio : 2) { }
-	}
-
+@media screen and (min-width:300px) and (max-width:800px) {
+body{font-size:0.8em;}
+sidebar{display:none;}
 }
 
-@media screen and (orientation: portrait){
-
-	.dupla{
-		width:96%;
-		padding:2%;
-		float:left;
-	}
-
-}
-
-@media screen and (max-width: 992px){
-
-	header{top:24%;}
-
-}
-
-@media screen and (max-width: 768px){
-
-	header{top:12%;}
-
-	.item{
-		width:48%;
-		margin:1%;
-		background:#000;
-		color:#FFF;
-	}
-
-}
-
-@media screen and (max-width: 576px){
-
-	header{top:2%;}
-
-	.item{
-		width:96%;
-		margin:2%;
-		background:#000;
-		color:#FFF;
-	}
-
-}
-
-@media screen and (orientation: portrait){
-
-	.dupla{
-		width:96%;
-		padding:2%;
-		float:left;
-	}
-
-}
-
-@media screen and (max-width: 992px){
-
-	header{top:24%;}
-
-}
-
-@media screen and (max-width: 750px){
-
-	header{top:12%;}
-
-	.item{
-		width:48%;
-		margin:1%;
-		background:rgb(88, 23, 27);
-		color:#FFF;
-	}
-
-}
-
-@media screen and (max-width: 550px){
-
-	header{top:2%;}
-
-	.item{
-		width:96%;
-		margin:2%;
-		background:#000;
-		color:#FFF;
+<style>
+img{max-width:100%;}
+</style>

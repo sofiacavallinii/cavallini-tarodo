@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -6,8 +5,9 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
 
+
 .contenedor {
-    width: 500px;
+    width: 100%;
     margin: 10 auto;
 }
 
@@ -40,14 +40,16 @@ h1, h3,{
 		 width: 5em;
 		 height: 5em;
 		 background-color: #999;
-		 position: static ;
+		 position: absolute ;
+	 }
+
 
 	}
 	#second
 		 width: 5em;
 		 height: 150em;
-		 position: fixed;
-		 top: 1em;
+		 position: absolute;
+		 top: 20em;
 		 left: 2em;}
 
 }
@@ -57,12 +59,13 @@ h1, h3,{
 h2, h4,{
 	font-weight:700;
 	font-family: 'Abel', sans-serif;
-	position: static;
+	position: absolute;
+
 
 }
 
 h1{
-	font-size:6rem;
+	font-size:6em;
 
 	letter-spacing:0.3em;
 	color:rgba(255,255,255,0.9);
@@ -71,6 +74,12 @@ h1{
   header { position: fixed;
 	background-color: #ffff00;
 	height: 100px; }
+.uno{
+  position: relative;
+	top:50%
+	transform: translateY(-5%);
+
+}
 
 
 	#inner {
@@ -260,3 +269,39 @@ sidebar{display:none;}
 <style>
 img{max-width:100%;}
 </style>
+
+
+@media screen and (max-width:640px) {
+  /* reglas CSS */
+}
+@media screen and (max-width:1024px) and (min-width:640px) {
+  /* reglas CSS */
+}
+@media screen and (min-width:1024px) {
+  /* reglas CSS */
+}
+
+For mobile : like samsung grand(480 * 800):
+@media only screen
+    and (max-device-width : 480px)
+    {
+
+        }
+
+
+For iphone:
+
+@media only screen
+and (max-device-width : 320px)
+ {
+
+ }
+
+
+For ipad:
+@media screen and (min-width:760px)
+ {
+
+ }
+
+<meta name="viewport" content="initial-scale=1, width=device-width">
